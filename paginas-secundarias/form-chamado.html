@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abrindo Chamado</title>
+    <link rel="stylesheet" href="../css/style-form-chamado.css">
+</head>
+<body>
+    <h1>Abrindo Chamado</h1>
+    <div id="formcham">
+        <form action="deu-certo.html" method="get">
+            <div id="dentroform">
+                <div>
+                    <input type="text" placeholder="Nome do funcionário" class="inptext"><br>
+                </div>
+                <div>
+                    <input type="text" id="assunto" placeholder="Assunto" class="inptext"><br>
+                </div>
+                <div>
+                    <input type="radio" name="categoria" id="adm">
+                    <label for="categ">Administrativo</label>
+                    <input type="radio" name="categoria" id="geren">
+                    <label for="categ">Gerencial</label>
+                    <input type="radio" name="categoria" id="oper">
+                    <label for="categ">Operacional</label>
+                </div>
+                <div>
+                    <textarea name="" id="" cols="50" rows="10" placeholder="Detalhes do chamado"></textarea>
+                </div>
+                <div>
+                    <button type="submit">Enviar chamado</button>
+                </div>
+                <div id="sair">
+                    <a href="../index.html">Sair</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
