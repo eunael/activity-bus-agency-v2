@@ -1,41 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abrindo Chamado</title>
-    <link rel="stylesheet" href="../css/style-form-chamado.css">
-</head>
-<body>
-    <h1>Abrindo Chamado</h1>
-    <div id="formcham">
-        <form action="deu-certo.html" method="get">
-            <div id="dentroform">
-                <div>
-                    <input type="text" placeholder="Nome do funcionário" class="inptext"><br>
-                </div>
-                <div>
-                    <input type="text" id="assunto" placeholder="Assunto" class="inptext"><br>
-                </div>
-                <div>
-                    <input type="radio" name="categoria" id="adm">
-                    <label for="categ">Administrativo</label>
-                    <input type="radio" name="categoria" id="geren">
-                    <label for="categ">Gerencial</label>
-                    <input type="radio" name="categoria" id="oper">
-                    <label for="categ">Operacional</label>
-                </div>
-                <div>
-                    <textarea name="" id="" cols="50" rows="10" placeholder="Detalhes do chamado"></textarea>
-                </div>
-                <div>
-                    <button type="submit">Enviar chamado</button>
-                </div>
-                <div id="sair">
-                    <a href="../index.html">Sair</a>
-                </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Abrindo Chamado</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+        </style>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2020.css">
+    </head>
+    <body>
+        <div class="w3-container w3-xxlarge w3-teal w3-center">
+            <h1>Abrindo Chamado</h1>
+        </div>
+        <form action="deu-certo.html" method="get" class="w3-container w3-padding">
+            <label class="w3-large">Nome do funcionário:</label>
+            <input type="text" class="w3-input">
+            
+            <label class="w3-large">Assunto:</label>
+            <input type="text" class="w3-input">
+            
+            <div class="w3-section">
+                <label class="w3-large">Categoria:</label>
+                <select class="w3-select w3-large" name="option">
+                    <option value="0" disabled selected>Escolha uma categoria</option>
+                    <option value="1">Administrativo</option>
+                    <option value="2">Gerencial</option>
+                    <option value="3">Operacional</option>
+                </select>
+            </div>
+
+            <label class="w3-large">Detalhes sobre o chamado:</label><br>
+            <textarea cols="50" rows="5"></textarea>
+
+            <div class="w3-container w3-center w3-padding-16 w3-xlarge">
+                <button class="w3-btn w3-padding-large w3-text-white w3-teal" type="submit">Enviar</button>
+            </div>
+            <div class="w3-container w3-right-align">
+                <a href="../index.html" class="w3-text-teal w3-xlarge">Sair</a>
             </div>
         </form>
-    </div>
-</body>
+    </body>
 </html>
